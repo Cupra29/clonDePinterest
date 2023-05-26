@@ -11,9 +11,6 @@ header{
     background-color: white;
 }
 
-.bell{
-    display: contents;
-}
 
 .container{
     display: flex;
@@ -89,23 +86,28 @@ header{
     width: 100%;
 }
 
-#icon{
+.navbar-left{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
 
+.navbar-right{
+    display: contents;
+}
+
 #message{
     display: flex;
-    margin-right: 10px;
+    margin-right: 20px;
     object-fit: contain;
     width: 2%;
 }
 
 #notifications{
     display: flex;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
     object-fit: contain;
     width: 2%;
 }
@@ -116,9 +118,9 @@ header{
     width: 10%;
 }
 
-#user{
+#profile-img{
     display: flex;
-    margin-right: 10px;
+    margin-right: 20px;
     object-fit: contain;
     width: 2%;
 }
