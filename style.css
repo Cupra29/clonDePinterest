@@ -11,11 +11,10 @@ header{
     background-color: white;
 }
 
-.box{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(174, 129, 216);
-    border: 1px solid white;
+.bell{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .container{
@@ -25,6 +24,34 @@ header{
     width: 100%;
     height: 100vh;
     background-color: beige;
+}
+
+.crear{
+    align-items: center;
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-weight: bolder;
+    height: 40px;
+    justify-content: center;
+    margin-left: 10px;
+    width: 70px;
+}
+
+.explorar{
+    align-items: center;
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-weight: bolder;
+    height: 40px;
+    justify-content: center;
+    margin-left: 10px;
+    width: 70px;
 }
 
 .finder{
@@ -37,6 +64,26 @@ header{
     width: 50%;
 }
 
+.inicio{
+    align-items: center;
+    background-color: black;
+    border-radius: 19px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-weight: bolder;
+    height: 40px;
+    justify-content: center;
+    margin-left: 10px;
+    width: 70px;
+}
+
+.link{
+    display: contents;
+    margin-right: 10px;
+}
+
 .navbar-pinterest{
     display: flex;
     justify-content: space-between;
@@ -44,8 +91,20 @@ header{
     width: 100%;
 }
 
+#icon{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#notifications{
+    display: flex;
+    width: 20%;
+}
+
 #pinterest-icon{
-    width: 35%;
+    display: flex;
+    width: 10%;
 }
 
 /* Tamaño de pantalla max 768 */
