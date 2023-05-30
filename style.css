@@ -10,15 +10,18 @@ header{
     display:flex;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .card-image{
-    border: 1px solid black;
+    position: relative;
     border-radius: 10px;
 }
 
-.card-image:hover{
-
+.card-image:hover .image-overlay{
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    opacity: 1;
 }
 
 .container{
@@ -26,12 +29,12 @@ header{
     grid-template-columns: repeat(5, 1fr);
     gap: 1em;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.crear{
+.create{
     align-items: center;
     background-color: white;
     border: none;
@@ -45,7 +48,7 @@ header{
     width: 70px;
 }
 
-.explorar{
+.explore{
     align-items: center;
     background-color: white;
     border: none;
@@ -69,7 +72,7 @@ header{
     width: 70%;
 }
 
-.inicio{
+.home{
     align-items: center;
     background-color: black;
     border-radius: 19px;
@@ -82,6 +85,25 @@ header{
     justify-content: center;
     margin-left: 10px;
     width: 70px;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.image-button {
+    margin: 0 10px;
 }
 
 .link{
@@ -109,6 +131,7 @@ header{
 
 .picture{
     border-radius: 10px;
+    display: block;
     height: 100%;
     object-fit: cover;
     width: 100%;
@@ -185,77 +208,77 @@ header{
     grid-row: 2/4;
 }
 
-#diez{}
-
-#once{}
-
-#doce{}
-
-#trece{}
-
-#catorce{}
-
-#quince{}
-
-#dieciseis{}
-
-#diecisiete{}
-
-#dieciocho{}
-
-#diecinueve{}
-
-#veinte{}
-
-#veintiuno{}
-
-#veintidos{}
-
-#veintitres{}
-
-#veinticuatro{}
-
-#veinticinco{}
-
-#veintiseis{}
-
-#veintisiete{}
-
-#veintiocho{}
-
-#veintinueve{}
-
-#treinta{}
-
-
-/* Tamaño de pantalla max 768 
-
-@media screen and (max-width: 768px){
-    .container{
-        background-color:rgb(211, 122, 7) ;
-    }
-    h1{
-        color: white;
-        font-family: 'Gill Sans';
-    }
+#diez{
+    grid-row: 3/4;
 }
 
-/* Tamaño de mobile 
+#once{
+    grid-row: 3/4;
+}
 
-@media screen and (max-width: 425px){
-    .container{
-        background-color: brown;
+#doce{
+    grid-row: 3/4;
+}
+
+#trece{
+    grid-row: 4/5;
+
+}
+
+#catorce{
+    grid-row: 4/6;
+}
+
+#quince{
+    grid-row: 4/5;
+}
+
+#dieciseis{
+    grid-row: 4/7;
+}
+
+#diecisiete{
+    grid-row: 4/5;
+}
+
+#dieciocho{
+    grid-row: 5/7;
+}
+
+#diecinueve{
+    grid-row: 5/6;
+}
+
+#veinte{
+    grid-row: 5/6;
+}
+
+#veintiuno{
+    grid-row: 6/9;
+}
+
+#veintidos{
+    grid-row: 6/8;
+}
+
+#veintitres{
+    grid-row: 6/8;
+}
+
+#veinticuatro{
+    grid-row: 7/9;
+}
+
+#veinticinco{
+    grid-row: 7/10;
+}
+
+#veintisiete{
+    grid-row: 8/10;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        background-color:bisque ;
     }
-    h1{
-        color: aquamarine;
-        font-family: 'Lucida Sans';
-    }
-    header{
-        flex-direction: column;
-    }
-    .box{
-        width: auto;
-        height: 50px;
-        flex-grow: 1;
-    }
-} */
+}
